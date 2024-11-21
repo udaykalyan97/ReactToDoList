@@ -53,7 +53,7 @@ function ToDoList(props) {
 
     return (
         <div className="to-do-list">
-            <h1>{props.title}</h1>
+            <h2>{props.title}</h2>
             <div>
                 <input
                     type="text"
