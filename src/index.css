@@ -1,0 +1,178 @@
+body {
+  background-color: rgb(247, 206, 238);
+}
+
+.to-do-list {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button {
+  background-color: rgb(96, 250, 96);
+}
+.add-button:hover {
+  background-color: rgb(1, 72, 1);
+}
+
+.delete-button {
+  background-color: rgb(145, 4, 4);
+}
+.delete-button:hover {
+  background-color: rgb(242, 96, 96);
+}
+
+.up-button {
+  background-color: rgb(125, 130, 79);
+}
+.up-button:hover {
+  background-color: rgb(160, 186, 65);
+}
+
+.down-button {
+  background-color: rgb(40, 12, 200);
+}
+.down-button:hover {
+  background-color: rgb(140, 126, 242);
+}
+
+.complete-button{
+  background-color: rgb(252, 3, 3);
+}
+.complete-button:hover{
+  background-color: rgb(249, 129, 129);
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+ol {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+
+li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(199, 160, 246);
+  margin-bottom: 4px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1; 
+  text-align: left;
+}
+
+.delete-button, .up-button, .down-button,.complete-button,.edit-button,.save-button {
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.complete-button{
+  border-radius: 50%;
+}
+
+.complete-button.completed {
+  background-color: green;
+}
+
+.complete-button.not-completed {
+  background-color: red;
+}
+
+.edit-button,.save-button{
+  background-color: grey;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 8px 15px;
+  }
+
+  input[type="text"] {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  li {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+
+  .delete-button, 
+  .up-button,
+  .down-button {
+    padding: 6px 10px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+
+  li {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+
+  .delete-button, .up-button,.down-button {
+    font-size: 1rem;
+    padding: 4px 8px;
+    margin-left: 5px;
+  }
+
+  .to-do-list {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
