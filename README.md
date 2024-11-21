@@ -73,7 +73,7 @@ Custom CSS styles are included in `index.css`, featuring:
     http://localhost:5173
 
 # Project File Structure:
-
+```bash
 src/
 │
 ├── components/
